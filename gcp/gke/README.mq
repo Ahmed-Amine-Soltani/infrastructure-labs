@@ -1,0 +1,5 @@
+run to connect the kubectl client to the gke cluster and change the context
+
+```bash
+gcloud container clusters get-credentials gke-app-lab --zone europe-west1-b
+```
