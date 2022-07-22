@@ -8,4 +8,4 @@ system_node_pool_machine_type = "e2-medium"
 prometheus_ilb_enabled        = false
 grafana_enabled               = false
 max_nodes_count_apps          = 2
-max_nodes_count_system        = 2
+max_nodes_count_system        = 3

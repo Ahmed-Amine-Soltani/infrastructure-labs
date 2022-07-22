@@ -47,21 +47,6 @@ module "gke" {
       preemptible        = true
       initial_node_count = 1
     },
-    {
-      name               = "apps"
-      machine_type       = var.apps_node_pool_machine_type
-      node_locations     = join(",", var.node_locations)
-      min_count          = 1
-      max_count          = var.max_nodes_count_apps
-      local_ssd_count    = 0
-      disk_size_gb       = var.apps_node_pool_disk_size_gb
-      disk_type          = "pd-standard"
-      image_type         = "COS"
-      auto_repair        = true
-      auto_upgrade       = true
-      preemptible        = true
-      initial_node_count = 1
-    },
   ]
 
   node_pools_oauth_scopes = {
