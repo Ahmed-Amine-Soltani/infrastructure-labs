@@ -103,7 +103,7 @@ variable "max_nodes_count_system" {
 
 variable "slack_api_url" {
   type        = string
-  default     = "https://hooks.slack.com/services/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"
+  default     = ""
   description = "URL of Slack to send alerts with prometheus"
 }
 
