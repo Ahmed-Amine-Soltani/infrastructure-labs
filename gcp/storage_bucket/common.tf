@@ -15,7 +15,7 @@ terraform {
 }
 
 locals {
-  google_project = "saa-${terraform.workspace}-357019"
+  google_project = "saa-${terraform.workspace}"
 }
 
 provider "google" {
