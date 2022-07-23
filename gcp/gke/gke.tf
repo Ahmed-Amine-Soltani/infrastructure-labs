@@ -20,7 +20,7 @@ module "gke" {
   master_ipv4_cidr_block     = var.master_ipv4_cidr_block
   master_authorized_networks = var.master_authorized_networks
 
-  http_load_balancing             = false
+  http_load_balancing             = true # to be able to create Ingress
   horizontal_pod_autoscaling      = true
   network_policy                  = true
   enable_vertical_pod_autoscaling = false
